@@ -1,0 +1,47 @@
+/*LIST PRODUCT*/
+.tbody-thumb {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.tbody-thumb img {
+    border: 1px solid #ddd;
+}
+
+#paging-wp .section-detail ul {
+    display: flex;
+    right: 5%;
+    position: absolute;
+}
+
+#paging-wp .section-detail ul li {
+    padding: 4px 14px;
+    border-radius: 4px;
+}
+
+#paging-wp {
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+
+#paging-wp .section-detail ul li a {
+    color: #a3a5c3;
+}
+
+#paging-wp .section-detail ul li a:hover {
+    color: #6a84f8;
+    font-weight: bold;
+}
+
+#paging-wp li.active {
+    background-color: #6a84f8;
+}
+
+#paging-wp li.active a {
+    color: white !important;
+}
+
+#paging-wp .section-detail ul li .fa {
+    font-size: 18px;
+}

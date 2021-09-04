@@ -1,0 +1,34 @@
+RewriteEngine On
+#=========== Phần HEADER ====================
+RewriteRule "trang-chu.html" "?mod=home&action=index"
+RewriteRule "danh-sach-san-pham.html" "?mod=product&action=index"
+RewriteRule "danh-sach-bai-viet.html" "?mod=page&action=index"
+RewriteRule "gioi-thieu.html" "?mod=page&action=intro"
+RewriteRule "lien-he.html" "?mod=page&action=contact"
+
+RewriteRule "gio-hang.html" "?mod=cart&action=index"
+
+RewriteRule "^^danh-muc/dien-thoai/([0-9]+).html$" "?mod=product&action=phone&page=$1"
+#============Danh mục 1
+RewriteRule "^danh-muc/dien-thoai.html$" "?mod=product&action=phone"
+RewriteRule "^danh-muc/laptop.html$" "?mod=product&action=laptop"
+
+#============Danh mục 2
+RewriteRule "^danh-muc-san-pham/dien-thoai/iphone.html" "?mod=product&action=phone&cat_name=iphone"
+RewriteRule "^danh-muc-san-pham/dien-thoai/samsung.html" "?mod=product&action=phone&cat_name=samsung"
+RewriteRule "^danh-muc-san-pham/dien-thoai/oppo.html" "?mod=product&action=phone&cat_name=oppo"
+
+
+#============Chi tiết sản phẩm
+RewriteRule "^chi-tiet-san-pham-([0-9]+)/([a-zA-Z0-9-]+).html$" "?mod=product&action=detail&id=$1&ten_sp=$2"
+
+#============Danh sách bài viết
+RewriteRule "^chi-tiet-bai-viet-([0-9]+)/([a-zA-Z0-9-]+).html$" "?mod=post&action=detail&id=$1&ten_bai=$2"
+
+#============= Thanh toán
+RewriteRule "thanh-toan-san-pham.html" "?mod=checkout&action=index"
+
+#============ Thanks
+RewriteRule "dat-hang-thanh-cong.html" "?mod=checkout&action=thanks"
+
+

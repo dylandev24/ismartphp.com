@@ -1,0 +1,12 @@
+RewriteEngine On
+#=====>info<=======
+RewriteRule "page/ ([a-zA-Z]+).html$" "?mod=page&action=$1"
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.team-account-page table {
+    /* border: 1px solid #e3e3e3; */
+    width: 100%;
+    /* border: 1px solid #e3e3e3; */
+}
+
+.team-account-page .tablee th {
+    border: 1px solid #e3e3e3;
+    padding: 6px;
+    text-align: center;
+}
+
+.team-account-page .tablee td {
+    border: 1px solid #e3e3e3;
+    padding: 6px;
+    text-align: center;
+}
+
+/* slider */
+#exampleModalLabel label {
+    font-size: 16px;
+}

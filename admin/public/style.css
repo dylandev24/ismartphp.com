@@ -1,0 +1,32 @@
+/*STYLE*/
+
+
+@import '../public/css/import/fonts.css';
+@import '../public/css/import/global.css';
+@import '../public/css/import/list_post.css';
+@import '../public/css/import/list_product.css';
+@import '../public/css/import/add_cat.css';
+@import '../public/css/import/info_account.css';
+@import '../public/css/import/change_pass.css';
+@import '../public/css/import/sidebar.css';
+@import '../public/css/import/menu.css';
+@import '../public/css/import/detail_order.css';
+
+/* #header-wp {
+    background-color: #f5f5f5;
+    box-shadow: 1px 1px 20px #7e7979;
+    
+}
+
+#logo,
+#account {
+    color: rgb(80, 78, 78);
+}
+
+#footer-wp {
+    background-color: #53B8BB !important;
+}
+
+#footer-wp p {
+    background: none;
+} */

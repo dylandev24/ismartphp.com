@@ -1,0 +1,268 @@
+body {
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Reset Bootstrap*/
+ul li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.dropdown-menu {
+    left: inherit;
+    right: 10px;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown .dropdown-toggle {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.dropdown-menu>li>a {
+    padding: 5px 20px;
+    color: #2b2b2b;
+    font-family: 'Roboto Regular';
+}
+
+/*CK Editor*/
+#cke_desc {
+    width: 800px;
+    margin-bottom: 15px;
+}
+
+#sidebar .sub-menu .nav-link {
+    padding-left: 50px !important;
+}
+
+.dropdown-menu .show {
+    width: 200px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.userNav li {
+    display: inline;
+    padding: 0px;
+    float: left;
+}
+
+.userNav {
+    margin-right: 20px;
+}
+
+.userNav li a {
+    color: #eeeeee;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    border-left: 1px solid #303031;
+    border-right: 1px solid #404142;
+    padding: 5px 10px;
+}
+
+a#logo {
+    padding: 0px 28px;
+    font-size: 16px;
+}
+
+#header-wp {
+    background-image: url('../../images/bg.png') !important;
+    width: 100%;
+    display: block;
+    color: #eeeeee;
+    padding: 3px 0;
+    z-index: 999;
+    height: 100%;
+}
+
+.userNav li a img {
+    display: block;
+    float: left;
+    margin: 6px 4px 0px 0px;
+}
+
+.userNav li:hover a {
+    background-color: #282f35;
+    transition: 0.2s;
+}
+
+a.edit {
+    margin-left: 20px;
+}
+
+button.delete {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+a.edit:hover .fa {
+    color: rgb(5, 216, 216);
+    transition: 0.2s;
+
+}
+
+button.delete:hover .fa {
+    color: red;
+    transition: 0.2s;
+}
+
+/* ====================TOAST MESSAGE=========== */
+#main-toast {
+    position: fixed;
+    top: 40px;
+    right: 32px;
+    z-index: 99999;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px 0;
+    border-left: 5px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    transition: all linear 1s;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+
+    25% {
+        transform: translateX(100px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(100px);
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+}
+
+.toast-success {
+    border-color: #21A67A !important;
+}
+
+.toast-success .toast-icon {
+    color: #21A67A;
+}
+
+.toast-warning {
+    border-color: #da9f33 !important;
+}
+
+.toast-warning .toast-icon {
+    color: #da9f33;
+}
+
+.toast-error {
+    border-color: #e93b3b !important;
+}
+
+.toast-error .toast-icon {
+    color: #e93b3b;
+}
+
+.toast-icon {
+    font-size: 24px;
+    color: #21A67A;
+}
+
+.toast-msg {
+    opacity: 60%;
+    margin-top: 2px;
+}
+
+.toast-icon,
+.toast-close {
+    padding: 0 16px;
+}
+
+.toast-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.toast-body {
+    flex-grow: 1;
+}
+
+.toast-close {
+    font-size: 20px;
+    color: #cacbcc;
+}
+
+.toast-close:hover {
+    cursor: pointer;
+    color: #9fa0a1;
+
+}
